@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@1,400;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Poppins', 'Open Sans', 'Josefin Sans' sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #282c3f;
+}
+a:hover{
+    color: #ff9f43;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 15px; */
+    position: sticky;
+    top: 0;
+    box-shadow: 0 5px 5px #4444;
+
+}
+.navbar .logo img{
+    width: 70px;
+    margin-left: -120px;
+}
+.nav-items{
+    display: flex;
+    gap: 90px;
+    list-style: none;
+    margin-right: 20px;
+}
+.nav-items li{
+    display: block;
+    position: relative;
+}
+.nav-items li:hover{
+    color: #ff9f43;
+}
+.icons{
+    position: absolute;
+    right: 50px;
+    top: 2px;
+}
+.icons1{
+    position: absolute;
+    right: 45px;
+    top: 2px;
+}
+.icons2{
+    position: absolute;
+    right: 37px;
+    top: 2px;
+}
+.icons3{
+    position: absolute;
+    right: 53px;
+    top: 2px;
+}
+.icons4{
+    position: absolute;
+    right: 35px;
+    top: 2px;
+}
+.main-banner{
+    width: 100%;
+    background: #282c3f;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    cursor: pointer;
+}
+.main-banner img{
+    display: block;
+    transition: 0.5s;
+}
+.main-banner img:hover{
+    transform: scale(1.05);
+}
+h4.heading{
+    display: block;
+    float: left;
+    margin-left: 100px;
+    margin-top: 28px;
+    border-bottom: 2px solid #282c3f;
+}
+input[type="search"]{
+    width: 45%;
+    margin-left: 60px;
+    margin-top: 30px;
+    border: none;
+    position: absolute;
+}
+input[type="search"]:focus{
+    width: 15%;
+    outline: none;
+}
+.drop{
+    position: relative;
+    left: 160px;
+    bottom: 10px;
+    font-size: 40px;
+    color: #ff9f43;
+}
+main{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #282c3f;
+}
+.section-links{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    cursor: pointer;
+    color: #636e72;
+}
+.banner{
+    width: 21%;
+    height: 50vh;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    border: none;
+    overflow: hidden;
+    margin: 25px;
+    padding: 0 20px;
+
+}
+.banner:hover{
+    border: 1px solid #636e72;
+    box-shadow: 2px 2px 5px #9999;
+}
+.banner h3{
+    width: 100%;
+    padding-top: 10px;
+}
+.banner p{
+    width: 100%;
+    padding-top: 5px;
+}
+.banner .rating{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    /* position: relative; */
+}
+.rating .rate{
+    display: block;
+    background: #48c479;
+    padding: 2px 5px 2px 2px;
+}
+.footer-section{
+    width: 100%;
+    margin-top: 50px;
+    padding: 70px 0;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #9999;
+} 
+.footer-links{
+    width: 100%;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+}
+.footer-links li:nth-child(1){
+    font-size: 20px;
+    color: #ffff;
+}
+.footer-links li a{
+    color: #9999;
+}
+.footer-links img{
+    width: 100%;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.footer-links img:hover{
+    transform: scale(1.05);
+}
+.footer-icon{
+    width: 100%;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.owner h4, .copyright p{
+    width: 100%;
+    color: #9999;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.owner h4:hover{
+    transform: scale(1.05);
+}
+.social-icon{
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.social-icon .insta, .linkedin, .github, .twitter{
+    width: 100%;
+    color: #ffff;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.social-icon .insta:hover, .social-icon .linkedin:hover, .social-icon .github:hover, .social-icon .twitter:hover{
+    transform: scale(1.05);
+}
