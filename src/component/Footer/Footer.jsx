@@ -1,5 +1,4 @@
 import React from 'react';
-// import './Footer.css';
 import { BsInstagram, BsLinkedin, BsGithub, BsTwitter } from 'react-icons/bs';
 
 const Footer = () => {

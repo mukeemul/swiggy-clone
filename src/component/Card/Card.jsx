@@ -6,7 +6,7 @@ import { CiStar } from 'react-icons/ci';
 const Card = ( props ) => {
   return (
       <div className="banner">
-          <img class="_2tuBw _12_oN" alt="Imperfecto" width="254" height="160" src={`https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/${props?.Data.image}`} />
+          <img src={`https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/${props?.Data.image}`} alt="Swiggy"  />
           <h3>{props?.Data?.name}</h3>
           <p>{props?.Data?.cuisines.join( ", " )}</p>
           <div className="rating">
@@ -52,8 +52,7 @@ const BodyApp = () => {
       <Card Data = {RepData[28]}/>
       <Card Data = {RepData[29]}/>
       <Card Data = {RepData[30]}/>
-      <Card Data = {RepData[31]}/>
-      
+      <Card Data = {RepData[31]}/> 
     </>
   )
 }

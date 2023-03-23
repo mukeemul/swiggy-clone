@@ -18,7 +18,6 @@ a:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 15px; */
     position: sticky;
     top: 0;
     box-shadow: 0 5px 5px #4444;
@@ -27,6 +26,11 @@ a:hover{
 .navbar .logo img{
     width: 70px;
     margin-left: -120px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.navbar .logo img:hover{
+    transform: scale(1.12);
 }
 .nav-items{
     display: flex;
@@ -112,30 +116,33 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 50px auto;
+    margin: 40px auto;
     padding-bottom: 10px;
     border-bottom: 1px solid #282c3f;
 }
 .section-links{
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
     list-style: none;
     cursor: pointer;
     color: #636e72;
 }
 .banner{
-    width: 21%;
-    height: 50vh;
+    width: 22.5%;
+    height: 45vh;
     float: left;
     display: flex;
     flex-wrap: wrap;
     cursor: pointer;
     border: none;
     overflow: hidden;
-    margin: 25px;
-    padding: 0 20px;
+    margin: 15px;
+    padding: 20px;
 
+}
+.banner img{
+    width: 230px;
 }
 .banner:hover{
     border: 1px solid #636e72;
@@ -147,16 +154,18 @@ main{
 }
 .banner p{
     width: 100%;
+    color: #636e72;
     padding-top: 5px;
+    font-size: 13px;
 }
 .banner .rating{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 15px;
-    /* position: relative; */
-}
+    padding-top: 15px; 
+    position: relative;
+ }
 .rating .rate{
     display: block;
     background: #48c479;

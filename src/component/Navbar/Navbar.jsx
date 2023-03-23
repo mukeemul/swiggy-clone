@@ -1,11 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 import logo from '../../Assets/logo.png'
 import { RiArrowDropDownLine, RiSearchLine } from 'react-icons/ri';
 import { MdLocalOffer, MdOutlineHelp, MdFilterList } from 'react-icons/md';
 import { CgProfile } from 'react-icons/cg';
 import { BsCartCheck } from 'react-icons/bs';
-
 
 const Navbar = () => {
     return (
@@ -35,10 +34,10 @@ const Banner = () => {
         <>
             <Navbar />
             <div className="main-banner">
-                <img width="260" height="260" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/pneknawbadtvceqzwiep" class="_1gDnr" />
-                <img width="260" height="260" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/awurei8ypqkafoqay9ym" class="_1gDnr" />
-                <img width="260" height="260" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/zpkkdkmvlj5cuvqbc50t" class="_1gDnr" />
-                <img width="260" height="260" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/ifi2lbzxeu1hvsqrsip3" class="_1gDnr" />
+                <img width="260" height="260" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/pneknawbadtvceqzwiep" />
+                <img width="260" height="260" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/awurei8ypqkafoqay9ym" />
+                <img width="260" height="260" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/zpkkdkmvlj5cuvqbc50t" />
+                <img width="260" height="260" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/ifi2lbzxeu1hvsqrsip3" />
             </div>
 
         </>
@@ -55,12 +54,12 @@ const Section = () => {
                     </div>
                     <div className="right-section">
                         <ul className='section-links'>
-                            <li><a href="">Relevance</a></li>
-                            <li><a href=""></a>Delivery Time</li>
-                            <li><a href=""></a>Rating</li>
-                            <li><a href=""></a>Cost: Low To High</li>
-                            <li><a href=""></a>Cost: High To Low</li>
-                            <li><a href=""></a>Filters <MdFilterList /></li>
+                            <li><a href="/">Relevance</a></li>
+                            <li><a href="/"></a>Delivery Time</li>
+                            <li><a href="/"></a>Rating</li>
+                            <li><a href="/"></a>Cost: Low To High</li>
+                            <li><a href="/"></a>Cost: High To Low</li>
+                            <li><a href="/"></a>Filters <MdFilterList /></li>
                         </ul>
                     </div>
                 </main>
