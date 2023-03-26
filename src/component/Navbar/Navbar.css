@@ -34,9 +34,9 @@ a:hover{
 }
 .nav-items{
     display: flex;
-    gap: 90px;
+    gap: 60px;
     list-style: none;
-    margin-right: 20px;
+    margin-right: -130px;
 }
 .nav-items li{
     display: block;
@@ -47,7 +47,7 @@ a:hover{
 }
 .icons{
     position: absolute;
-    right: 50px;
+    right: 45px;
     top: 2px;
 }
 .icons1{
@@ -69,6 +69,33 @@ a:hover{
     position: absolute;
     right: 35px;
     top: 2px;
+}
+.searchbar{
+    margin-right: 50px;
+}
+.searchbar .search{
+    position: relative;
+    padding: 8px;
+    border-radius: 30px;
+    border: 1px solid #282c3f;
+}
+.searchbar .search:focus{
+    outline: none;
+}
+.searchbar .search::placeholder{
+    margin-left: 5px;
+}
+.searchbar button{
+    background: #282c3f;
+    color: #ffff;
+    align-items: center;
+    position: absolute;
+    top: 20.5px;
+    left: 1165px;
+    padding: 8px 10px;
+    border-radius: 30px;
+    border: 1px solid #282c3f;
+    cursor: pointer;
 }
 .main-banner{
     width: 100%;
@@ -93,14 +120,14 @@ h4.heading{
     margin-top: 28px;
     border-bottom: 2px solid #282c3f;
 }
-input[type="search"]{
+.logo #search{
     width: 45%;
     margin-left: 60px;
     margin-top: 30px;
     border: none;
     position: absolute;
 }
-input[type="search"]:focus{
+.logo #search:focus{
     width: 15%;
     outline: none;
 }
