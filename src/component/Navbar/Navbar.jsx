@@ -10,6 +10,7 @@ import { BsCartCheck } from 'react-icons/bs';
 const Navbar = () => {
     const [data, setData] = useState(RepData);
     const [title, setTitle] = useState('');
+    // console.log(RepData.filter(item =>item.name.toLowerCase().includes(title)));
     return (
         <div className='container'>
             <header className='navbar'>
@@ -33,15 +34,15 @@ const Navbar = () => {
                         value={title}
                         onChange={(e) => setTitle(e.target.value)}
                     />
-                    <button onChange={ () =>{
-                        const filterData = RepData.filter( (items) =>{
-                            return items?.RepData?.name.includes(title);
+                    <button value={data} onClick={() => {
+                        const fiterData = RepData.filter((item) => {
+                            return item?.name.toLowerCase().includes(title);
                         });
-                        setData(filterData);
-                    }}>Search</button>
+                        console.log(fiterData);
+                        setData(fiterData);
+                    }} >Search</button>
                 </div>
             </header>
-
         </div>
     );
 }
@@ -70,7 +71,7 @@ const Section = () => {
                     </div>
                     <div className="right-section">
                         <ul className='section-links'>
-                            <li><a href="/">Relevance</a></li>
+                            <li><a href="/"></a>Relevance</li>
                             <li><a href="/"></a>Delivery Time</li>
                             <li><a href="/"></a>Rating</li>
                             <li><a href="/"></a>Cost: Low To High</li>
@@ -81,6 +82,6 @@ const Section = () => {
                 </main>
             </div>
         </>
-    )
+    );
 }
 export default Section;
